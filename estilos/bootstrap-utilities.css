@@ -5,7 +5,7 @@
  */
 @font-face {
   font-family: "Limelight";
-  src: url("../recursos/fuentes/Limelight-Regular.ttf") format("truetype");
+  src: url("../recursos/fuentes/BarlowCondensed-SemiBold.ttf") format("truetype");
   font-weight: bold;
   font-style: bold;
 }
@@ -1028,6 +1028,10 @@
 
 .w-50 {
   width: 50% !important;
+}
+
+.w-60 {
+  width: 60% !important;
 }
 
 .w-75 {

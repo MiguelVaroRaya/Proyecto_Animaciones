@@ -22,49 +22,6 @@ body {
   max-height: 39rem;
 }
 
-.mapa {
-  background: url(../recursos/imagenes/mapa.png) no-repeat center center;
-  width: 100%;
-  height: 500px;
-}
-
-#local {
-  padding-bottom: 100px;
-}
-
-.wrapper {
-  width: 50%;
-  margin-left: 100px;
-}
-
-#numeros-local div {
-  padding: 0 20px 0 0;
-  height: 48px;
-}
-
-#numeros-local div:not(:last-child) {
-  border-right: 2px solid #3f3f3f;
-}
-
-#numeros-local div:not(:first-child) {
-  padding-left: 20px;
-}
-
-#numeros-local p {
-  margin: 0;
-}
-
-#iconos i {
-  font-size: 26px;
-  padding: 0 8px;
-}
-
-#equipo {
-  height: 565px;
-  background: url(../recursos/imagenes/equipoDeTrabajo.jpg) no-repeat center center;
-  background-size: cover;
-}
-
 #ratones {
   background: url(../recursos/imagenes/cropped-ratones.jpg) no-repeat center center;
   background-size: cover;
@@ -94,38 +51,6 @@ body {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-@media (max-width: 1200px) {
-  #local {
-    flex-wrap: wrap;
-    padding-top: 30px;
-  }
-  .wrapper {
-    width: 90%;
-    margin: auto;
-    padding-top: 50px;
-  }
-}
-@media (max-width: 768px) {
-  #intro, #equipo {
-    width: 90% !important;
-  }
-  .productos-fila {
-    width: 100% !important;
-    text-align: center;
-  }
-}
-@media (max-width: 576px) {
-  .icono-wrap {
-    flex-wrap: wrap;
-    justify-content: center !important;
-  }
-}
-@font-face {
-  font-family: "Titulos";
-  src: url("../recursos/fuentes/Limelight-Regular.ttf") format("ttf");
-  font-weight: bold;
-  font-style: bold;
-}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -133,7 +58,7 @@ body {
  */
 @font-face {
   font-family: "Limelight";
-  src: url("../recursos/fuentes/Limelight-Regular.ttf") format("truetype");
+  src: url("../recursos/fuentes/BarlowCondensed-SemiBold.ttf") format("truetype");
   font-weight: bold;
   font-style: bold;
 }
@@ -7823,6 +7748,10 @@ textarea.form-control-lg {
 
 .w-50 {
   width: 50% !important;
+}
+
+.w-60 {
+  width: 60% !important;
 }
 
 .w-75 {

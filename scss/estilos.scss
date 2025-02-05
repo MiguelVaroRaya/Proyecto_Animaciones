@@ -1,0 +1,55 @@
+#container-general{
+    padding: 0;
+}
+
+body{
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+#menu a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#menu button {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.carousel-inner{
+  max-height: 39rem;
+}
+
+#ratones {
+  background: url(../recursos/imagenes/cropped-ratones.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#teclados {
+  background: url(../recursos/imagenes/teclado_setup2.avif) no-repeat center center;
+  background-size: cover;
+}
+
+#alfombrillas {
+  background: url(../recursos/imagenes/alfombrilla_fondo.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#nosotros {
+  background: url(../recursos/imagenes/equipoDeTrabajo.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#catalogo {
+  background: url(../recursos/imagenes/catalogo.avif) no-repeat center center;
+  background-size: cover;
+}
+
+#text-shadow {
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+$body-secondary-bg: #f2f2f2;
+
+@import "../bootstrap/scss/bootstrap.scss";

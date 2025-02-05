@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../estilos/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body class="bg-body-secondary">
+    <div class="container-fluid" id="container-general">
+      <!--ENCABEZADO CON NAVBAR-->
+
+      <nav
+        class="navbar navbar-expand-xl bg-dark bg-gradient p-xl-1 p-sm-3 pe-4"
+        id="menu"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a href="../public/index.html"
+            ><img
+              src="../recursos/imagenes/logoSinFondo.png"
+              class="img-fluid rounded-circle"
+              style="width: 120px; height: 120px; margin-right: 5px"
+              alt="Logo de GamesMods"
+          /></a>
+          <a class="navbar-brand" href="../public/index.html">
+            <span class="fs-2 fw-bold miFuente2">GamesMods</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  aria-current="page"
+                  href="../public/index.html"
+                  ><span class="fs-5">Inicio</span></a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="fs-5">Productos</span>
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                  <li>
+                    <a
+                      class="dropdown-item text-white bg-dark"
+                      href="../paginas/ratones.html"
+                      ><span class="fs-5">Ratones</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-white bg-dark"
+                      href="../paginas/teclado.html"
+                      ><span class="fs-5">Teclados</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-white bg-dark"
+                      href="../paginas/alfombrilla.html"
+                      ><span class="fs-5">Alfombrillas</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white"
+                  href="../paginas/sobreNosotros.html"
+                  ><span class="fs-5">Sobre nosotros</span></a
+                >
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="email"
+                data-bs-theme="light"
+              />
+              <button
+                class="btn btn-primary btn-primary-outline-success me-2"
+                type="button"
+                aria-label="Busca en la web"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+              <div class="dropdown dropstart">
+                <button
+                  type="button"
+                  class="btn btn-primary dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-bs-auto-close="outside"
+                >
+                  Login
+                </button>
+                <form
+                  class="dropdown-menu p-4 mt-5"
+                  style="width: 230px"
+                  data-bs-theme="light"
+                >
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Correo electronico"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Contraseña"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="dropdownCheck2"
+                      />
+                      <label class="form-check-label" for="dropdownCheck2">
+                        Recuerdame
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Inicio Sesión
+                  </button>
+                </form>
+              </div>
+              <a href="carrito.html"
+                ><i
+                  class="bi bi-bag ms-2 text-white fs-4"
+                  aria-label="Acceso al carrito"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--PORTADA-->
+
+      <section>
+        <div
+          class="w-100 h-auto m-auto text-center d-flex justify-content-center align-items-center flex-wrap p-5"
+          id="catalogo"
+        >
+          <div class="w-50 p-4">
+            <h1
+              class="mb-5 fs-1 miFuente3 fw-bold d-flex justify-content-center align-items-center"
+              id="text-shadow"
+            >
+              CATÁLOGO
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <!--TABLA-->
+
+      <div class="container my-5">
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered">
+            <thead class="table-primary">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Disponibilidad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Logitech PRO X SUPERLIGHT 2 DEX</td>
+                <td>Ratones</td>
+                <td>179,00€</td>
+                <td>En stock</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Logitech PRO 2 LIGHTSPEED</td>
+                <td>Ratones</td>
+                <td>145,00€</td>
+                <td>Agotado</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Logitech G705</td>
+                <td>Ratones</td>
+                <td>119,00€</td>
+                <td>En stock</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Logitech G915 X LIGHTSPEED TKL"</td>
+                <td>Teclados</td>
+                <td>239,00€</td>
+                <td>En stock</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Logitech G515 LIGHTSPEED TKL</td>
+                <td>Teclados</td>
+                <td>165,00€</td>
+                <td>En stock</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Logitech PRO X 60</td>
+                <td>Teclados</td>
+                <td>215,00€</td>
+                <td>Agotado</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>VAXEE PA M (Winter21)</td>
+                <td>Alfombrillas</td>
+                <td>25,50€</td>
+                <td>En stock</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>VAXEE PA ZYGEN</td>
+                <td>Alfombrillas</td>
+                <td>42,99€</td>
+                <td>Agotado</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>VAXEE PA M (Summer22)</td>
+                <td>Alfombrillas</td>
+                <td>25,50€</td>
+                <td>Agotado</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!--FOOTER-->
+
+      <footer class="bg-dark bg-gradient text-white py-4">
+        <div class="container">
+          <div class="row text-center text-mx-start">
+            <div class="col-md-4 mb-3">
+              <h5 class="fw-bold">Dirección</h5>
+              <p class="mb-1">Avenida Alcalde Federico Molina, 53</p>
+              <p class="mb-0">Huelva, Andalucía, España</p>
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <h5 class="fw-bold">Horarios</h5>
+              <p class="mb-1">Lun - Vie: 11:00 - 23:00</p>
+              <p class="mb-0">Sáb - Dom: 11:00 - 24:00</p>
+            </div>
+
+            <div class="col-md-4 mb-3">
+              <h5 class="fw-bold">Contáctanos</h5>
+              <p class="mb-1">GamesMods@gmail.com</p>
+              <p class="mb-0">+34 602 33 44 55</p>
+            </div>
+          </div>
+
+          <hr class="border-light" />
+
+          <div class="row text-center">
+            <div class="col-md-6 mb-2 mb-md-0">
+              <a href="#" class="text-white text-decoration-none me-3"
+                >Términos y Condiciones</a
+              >
+              <a href="#" class="text-white text-decoration-none"
+                >Política de privacidad</a
+              >
+            </div>
+
+            <div class="col-md-6">
+              <p class="mb-2 mb-md-0">
+                &copy; 2024 GamesMods. Todos los derechos reservados
+              </p>
+              <div class="d-inline-block">
+                <a
+                  href="#"
+                  class="text-white me-2"
+                  aria-label="Redireccion a Twitter"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-white me-2"
+                  aria-label="Redireccion a Instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  href="#"
+                  class="text-white"
+                  aria-label="Redireccion a Youtube"
+                  ><i class="bi bi-youtube"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+</html>

@@ -5,23 +5,34 @@
  * For details, see https://creativecommons.org/licenses/by/3.0/.
  */
 @font-face {
-  font-family: "Limelight";
+  font-family: "Barlow";
   src: url("../recursos/fuentes/BarlowCondensed-SemiBold.ttf") format("truetype");
   font-weight: bold;
   font-style: bold;
 }
+@font-face {
+  font-family: "LimeLight";
+  src: url("../recursos/fuentes/Limelight-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+.miFuenteLime {
+  font-family: "LimeLight", sans-serif;
+  color: #d44444;
+}
+
 .miFuente {
-  font-family: "Limelight", sans-serif;
+  font-family: "Barlow", sans-serif;
   color: #7f2a2a;
 }
 
 .miFuente2 {
-  font-family: "Limelight", sans-serif;
+  font-family: "Barlow", sans-serif;
   color: #d44444;
 }
 
 .miFuente3 {
-  font-family: "Limelight", sans-serif;
+  font-family: "Barlow", sans-serif;
   color: white;
 }
 

@@ -11,7 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="../node_modules/animate.css/animate.css" />
-    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
   </head>
 
   <body class="bg-body-secondary">
@@ -28,10 +28,10 @@
             ><img
               src="../recursos/imagenes/logoSinFondo.svg"
               class="img-fluid rounded-circle"
-              style="width: 65px; height: 93px; margin-right: 5px"
+              style="width: 55px; height: 83px; margin-right: 5px"
               alt="Logo de GamesMods"
           /></a>
-          <a class="navbar-brand mb-2" href="index.html">
+          <a class="navbar-brand mb-2 ms-4" href="index.html">
             <span class="fs-2 fw-bold miFuente2">GamesMods</span>
           </a>
           <button
@@ -46,13 +46,13 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
               <li class="nav-item">
                 <a
                   class="nav-link text-white"
                   aria-current="page"
                   href="index.html"
-                  ><span class="fs-5">Inicio</span></a
+                  ><span class="fs-6">Inicio</span></a
                 >
               </li>
               <li class="nav-item dropdown">
@@ -63,28 +63,28 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <span class="fs-5">Productos</span>
+                  <span class="fs-6">Productos</span>
                 </a>
                 <ul class="dropdown-menu bg-dark">
                   <li>
                     <a
                       class="dropdown-item text-white bg-dark"
                       href="../paginas/ratones.html"
-                      ><span class="fs-5">Ratones</span></a
+                      ><span class="fs-6">Ratones</span></a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item text-white bg-dark"
                       href="../paginas/teclado.html"
-                      ><span class="fs-5">Teclados</span></a
+                      ><span class="fs-6">Teclados</span></a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item text-white bg-dark"
                       href="../paginas/alfombrilla.html"
-                      ><span class="fs-5">Alfombrillas</span></a
+                      ><span class="fs-6">Alfombrillas</span></a
                     >
                   </li>
                 </ul>
@@ -93,7 +93,7 @@
                 <a
                   class="nav-link text-white"
                   href="../paginas/sobreNosotros.html"
-                  ><span class="fs-5">Sobre nosotros</span></a
+                  ><span class="fs-6">Sobre nosotros</span></a
                 >
               </li>
             </ul>
@@ -181,49 +181,53 @@
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active w-100" data-bs-interval="13000">
+          <div class="carousel-item active w-100" data-bs-interval="22500">
             <div
-              class="position-absolute top-50 start-50 translate-middle px-4 py-2 h-35"
+              class="position-absolute top-50 start-50 translate-middle px-4 py-2 h-50"
             >
               <h1 class="fw-bold text-center miFuente3">
                 ¡Personaliza tu experiencia gaming!
               </h1>
             </div>
             <video
-            src="../recursos/videos/video_carrusel_1.mp4"
-            class="d-block w-100"
-            alt="Varios ratones de estilo gaming"
-            autoplay
+              src="../recursos/videos/video_carrusel_2.mp4"
+              class="d-block w-100"
+              alt="Varios ratones de estilo gaming"
+              autoplay
               loop
             />
           </div>
-          <div class="carousel-item w-100" data-bs-interval="3000">
-            <img
-              src="../recursos/imagenes/teclado_setup2.avif"
-              class="d-block w-100 opacity-50"
-              alt="Escritorio de estilo gaming en tonos rosados y blancos"
-            />
+          <div class="carousel-item w-100" data-bs-interval="9000">
             <div
               class="position-absolute top-50 start-50 translate-middle px-4 py-2 h-50"
             >
-              <h1 class="fw-bold text-center miFuente">
+              <h1 class="fw-bold text-center miFuente3">
                 ¡Haz tu set-up perfecto y diferente!
               </h1>
             </div>
-          </div>
-          <div class="carousel-item w-100" data-bs-interval="3000">
-            <img
-              src="../recursos/imagenes/cropped-ratones2.jpg"
-              class="d-block w-100 opacity-50"
-              alt="Dos ratones de estilo gaming"
+            <video
+              src="../recursos/videos/video_carrusel_3.mp4"
+              class="d-block w-100"
+              alt="Varios ratones de estilo gaming"
+              autoplay
+              loop
             />
+          </div>
+          <div class="carousel-item w-100" data-bs-interval="13000">
             <div
               class="position-absolute top-50 start-50 translate-middle px-4 py-2 h-50"
             >
-              <h1 class="fw-bold text-center miFuente">
+              <h1 class="fw-bold text-center miFuente3">
                 ¡Domina el juego con estilo único!
               </h1>
             </div>
+            <video
+              src="../recursos/videos/video_carrusel_1.mp4"
+              class="d-block w-100"
+              alt="Varios ratones de estilo gaming"
+              autoplay
+              loop
+            />
           </div>
         </div>
         <button
@@ -255,7 +259,7 @@
             <span class="text-primary">personalizados y exclusivos</span> al
             alcance de todos
           </h1>
-          <p class="p-3 fs-5">
+          <p class="p-3 fs-5 text-muted">
             <span class="miFuente">GamesMods</span> es el lugar donde puedes
             expresar e implementar tus gustos y aficiones en tu set-up. Crea
             diseños únicos inspirados en tus juegos favoritos o explora nuestras
@@ -263,151 +267,158 @@
           </p>
         </section>
 
-        <!--PRODUCTOS-->
-
-        <section class="container-fluid">
-          <div class="row w-75 mx-auto productos-fila">
-            <div
-              class="col-xl-4 col-lg-12 d-flex justify-content-start my-5 icono-wrap"
-              data-aos="fade-right"
-            >
-              <div class="w-100">
+        <section class="container-fluid py-5">
+          <div class="row w-75 mx-auto g-4 productos-fila">
+            <!-- Producto: Ratones -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-right">
+              <div
+                class="d-flex align-items-center p-4 bg-light rounded-4 shadow-sm h-100 transition-hover"
+              >
                 <img
                   src="../recursos/imagenes/raton_gris.webp"
                   alt="Raton gaming"
-                  width="180px"
-                  height="160px"
+                  class="img-fluid rounded-3"
+                  style="max-width: 120px; height: auto"
                 />
-              </div>
-              <div class="w-100">
-                <h2 class="fs-5 mt-4 px-4 pb-1 d-inline-block">
-                  <a
-                    class="nav-link"
-                    href="../paginas/ratones.html"
-                    data-bs-toggle="tooltip"
-                    data-bs-title="Echa un vistazo a nuestros ratones"
-                    >Ratones</a
-                  >
-                </h2>
-                <p class="px-4">
-                  Diseños ergonómicos y únicos para todo gamer.
-                </p>
+                <div class="ms-4">
+                  <h2 class="fs-5 fw-bold mb-3">
+                    <a
+                      class="text-decoration-none text-dark stretched-link"
+                      href="../paginas/ratones.html"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Echa un vistazo a nuestros ratones"
+                      >Ratones</a
+                    >
+                  </h2>
+                  <p class="text-muted mb-0">
+                    Diseños ergonómicos y únicos para todo gamer.
+                  </p>
+                </div>
               </div>
             </div>
-            <div
-              class="col-xl-4 col-md-12 col-lg-12 d-flex justify-content-start my-5 icono-wrap"
-              data-aos="fade-up"
-            >
-              <div class="w-100">
+
+            <!-- Producto: Teclados -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up">
+              <div
+                class="d-flex align-items-center p-4 bg-light rounded-4 shadow-sm h-100 transition-hover"
+              >
                 <img
                   src="../recursos/imagenes/teclado_blanco.webp"
                   alt="Teclado gaming"
-                  width="180px"
-                  height="160px"
+                  class="img-fluid rounded-3"
+                  style="max-width: 120px; height: auto"
                 />
-              </div>
-              <div class="w-100">
-                <h3 class="fs-5 mt-4 px-4 pb-1 d-inline-block">
-                  <a
-                    class="nav-link"
-                    href="../paginas/teclado.html"
-                    data-bs-toggle="tooltip"
-                    data-bs-title="Mira nuestros increíbles teclados"
-                    >Teclados</a
-                  >
-                </h3>
-                <p class="px-4">
-                  Teclados mecánicos adaptados a tus necesidades.
-                </p>
+                <div class="ms-4">
+                  <h3 class="fs-5 fw-bold mb-3">
+                    <a
+                      class="text-decoration-none text-dark stretched-link"
+                      href="../paginas/teclado.html"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Mira nuestros increíbles teclados"
+                      >Teclados</a
+                    >
+                  </h3>
+                  <p class="text-muted mb-0">
+                    Teclados mecánicos adaptados a tus necesidades.
+                  </p>
+                </div>
               </div>
             </div>
-            <div
-              class="col-xl-4 col-md-12 col-lg-12 d-flex justify-content-start my-5 icono-wrap"
-              data-aos="fade-left"
-            >
-              <div class="w-100">
+
+            <!-- Producto: Alfombrillas -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-left">
+              <div
+                class="d-flex align-items-center p-4 bg-light rounded-4 shadow-sm h-100 transition-hover"
+              >
                 <img
                   src="../recursos/imagenes/alfombrilla_viento.webp"
                   alt="Alfombrilla personalizada gaming"
-                  width="180px"
-                  height="160px"
+                  class="img-fluid rounded-3"
+                  style="max-width: 120px; height: auto"
                 />
-              </div>
-              <div class="w-100">
-                <h3 class="fs-5 mt-4 px-4 pb-1 d-inline-block">
-                  <a
-                    class="nav-link"
-                    href="../paginas/alfombrilla.html"
-                    data-bs-toggle="tooltip"
-                    data-bs-title="Conoce nuestras alfombrillas de diseño"
-                    >Alfombrillas</a
-                  >
-                </h3>
-                <p class="px-4">Personaliza tu espacio con diseños únicos.</p>
+                <div class="ms-4">
+                  <h3 class="fs-5 fw-bold mb-3">
+                    <a
+                      class="text-decoration-none text-dark stretched-link"
+                      href="../paginas/alfombrilla.html"
+                      data-bs-toggle="tooltip"
+                      data-bs-title="Conoce nuestras alfombrillas de diseño"
+                      >Alfombrillas</a
+                    >
+                  </h3>
+                  <p class="text-muted mb-0">
+                    Personaliza tu espacio con diseños únicos.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!--RECONDADO-->
-
-        <div class="container-fluid py-5">
+        <!-- Sponsors -->
+        <section class="container-fluid py-5 bg-light">
           <div class="container text-center py-5" data-aos="zoom-in-up">
             <h2 class="position-relative d-inline-block fw-bold text-dark">
-              <i class="bi bi-stars text-warning"></i>
-              Nuestros Sponsors
+              <i class="bi bi-stars text-warning"></i> Nuestros Sponsors
             </h2>
             <div
               class="border-bottom border-3 border-primary mt-2 w-50 mx-auto"
             ></div>
           </div>
           <div class="row g-4 justify-content-center mt-3">
+            <!-- Sponsor 1 -->
             <div
-              class="col-md-4 col-lg-6 d-flex justify-content-center align-items-center"
+              class="col-md-3 d-flex justify-content-center align-items-center"
               data-aos="fade-right"
             >
               <img
                 src="../recursos/imagenes/patrocinador1.png"
                 alt="Logo de Logitech"
-                class="img-fluid"
+                class="img-fluid rounded shadow"
                 style="max-height: 100px"
               />
             </div>
+
+            <!-- Sponsor 2 -->
             <div
-              class="col-md-4 col-lg-6 d-flex justify-content-center align-items-center"
+              class="col-md-3 d-flex justify-content-center align-items-center"
               data-aos="fade-left"
             >
               <img
                 src="../recursos/imagenes/patrocinador2.png"
                 alt="Logo de Razer"
-                class="img-fluid"
+                class="img-fluid rounded shadow"
                 style="max-height: 100px"
               />
             </div>
+
+            <!-- Sponsor 3 -->
             <div
-              class="col-md-4 col-lg-6 d-flex justify-content-center align-items-center mt-5"
+              class="col-md-3 d-flex justify-content-center align-items-center mt-5 mt-md-0"
               data-aos="fade-right"
             >
               <img
                 src="../recursos/imagenes/patrocinador3.png"
                 alt="Logo de NewSkill"
-                class="img-fluid"
+                class="img-fluid rounded shadow"
                 style="max-height: 100px"
               />
             </div>
+
+            <!-- Sponsor 4 -->
             <div
-              class="col-md-4 col-lg-6 d-flex justify-content-center align-items-center mt-5"
+              class="col-md-3 d-flex justify-content-center align-items-center mt-5 mt-md-0"
               data-aos="fade-left"
             >
               <img
                 src="../recursos/imagenes/patrocinador4.jpg"
                 alt="Logo de Vaxee"
-                class="img-fluid"
+                class="img-fluid rounded shadow"
                 style="max-height: 100px"
               />
             </div>
           </div>
-        </div>
+        </section>
       </main>
 
       <!--FOOTER-->

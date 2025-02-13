@@ -50,6 +50,11 @@ body{
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
+.transition-hover:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
 $body-secondary-bg: #f2f2f2;
 
 @import "../bootstrap/scss/bootstrap.scss";

@@ -610,24 +610,36 @@ $font-family-sans-serif:      "Helvetica", system-ui, -apple-system, "Segoe UI",
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 @font-face {
-  font-family: 'Limelight';
+  font-family: 'Barlow';
   src: url('../recursos/fuentes/BarlowCondensed-SemiBold.ttf') format('truetype');
   font-weight: bold;
   font-style: bold;
 }
 
+@font-face {
+  font-family: 'LimeLight';
+  src: url('../recursos/fuentes/Limelight-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+.miFuenteLime {
+  font-family: 'LimeLight', sans-serif;
+  color: $secundario;
+}
+
 .miFuente {
-  font-family: 'Limelight', sans-serif;
+  font-family: 'Barlow', sans-serif;
   color: $primario;
 }
 
 .miFuente2 {
-  font-family: 'Limelight', sans-serif;
+  font-family: 'Barlow', sans-serif;
   color: $secundario;
 }
 
 .miFuente3 {
-  font-family: 'Limelight', sans-serif;
+  font-family: 'Barlow', sans-serif;
   color: white;
 }
 
@@ -661,7 +673,7 @@ $h2-font-size:                $font-size-base * 2.5 !default;
 $h3-font-size:                $font-size-base * 2 !default;
 $h4-font-size:                $font-size-base * 1.75 !default;
 $h5-font-size:                $font-size-base * 1.50 !default;
-$h6-font-size:                $font-size-base !default;
+$h6-font-size:                $font-size-base * 1.35 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes

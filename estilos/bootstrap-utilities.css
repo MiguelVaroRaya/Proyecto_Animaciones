@@ -4,23 +4,34 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @font-face {
-  font-family: "Limelight";
+  font-family: "Barlow";
   src: url("../recursos/fuentes/BarlowCondensed-SemiBold.ttf") format("truetype");
   font-weight: bold;
   font-style: bold;
 }
+@font-face {
+  font-family: "LimeLight";
+  src: url("../recursos/fuentes/Limelight-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+.miFuenteLime {
+  font-family: "LimeLight", sans-serif;
+  color: #d44444;
+}
+
 .miFuente {
-  font-family: "Limelight", sans-serif;
+  font-family: "Barlow", sans-serif;
   color: #7f2a2a;
 }
 
 .miFuente2 {
-  font-family: "Limelight", sans-serif;
+  font-family: "Barlow", sans-serif;
   color: #d44444;
 }
 
 .miFuente3 {
-  font-family: "Limelight", sans-serif;
+  font-family: "Barlow", sans-serif;
   color: white;
 }
 
@@ -1763,7 +1774,7 @@
 }
 
 .fs-6 {
-  font-size: 1rem !important;
+  font-size: calc(1.26rem + 0.12vw) !important;
 }
 
 .fst-italic {
@@ -5395,6 +5406,9 @@
   }
   .fs-5 {
     font-size: 1.5rem !important;
+  }
+  .fs-6 {
+    font-size: 1.35rem !important;
   }
 }
 @media print {

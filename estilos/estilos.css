@@ -51,9 +51,43 @@ body {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-.transition-hover:hover {
-  transform: translateY(-5px);
+@keyframes subtleBounce {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+  80% {
+    transform: translateY(-6px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+.bounce-hover {
+  transition: all 0.3s ease;
+}
+
+.bounce-hover:hover {
+  animation: subtleBounce 0.5s ease forwards;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hover-opacity-100:hover {
+  opacity: 1 !important;
+  transition: opacity 0.3s ease;
+}
+
+.hover-translate {
   transition: transform 0.3s ease;
+}
+
+.hover-translate:hover {
+  transform: translateY(-5px);
 }
 
 /*!

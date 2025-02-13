@@ -49,7 +49,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
               <li class="nav-item">
                 <a
-                  class="nav-link text-white"
+                  class="nav-link text-white hover-effect"
                   aria-current="page"
                   href="index.html"
                   ><span class="fs-6">Inicio</span></a
@@ -57,7 +57,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-white"
+                  class="nav-link dropdown-toggle text-white hover-effect"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -68,21 +68,21 @@
                 <ul class="dropdown-menu bg-dark">
                   <li>
                     <a
-                      class="dropdown-item text-white bg-dark"
+                      class="dropdown-item text-white bg-dark hover-effect"
                       href="../paginas/ratones.html"
                       ><span class="fs-6">Ratones</span></a
                     >
                   </li>
                   <li>
                     <a
-                      class="dropdown-item text-white bg-dark"
+                      class="dropdown-item text-white bg-dark hover-effect"
                       href="../paginas/teclado.html"
                       ><span class="fs-6">Teclados</span></a
                     >
                   </li>
                   <li>
                     <a
-                      class="dropdown-item text-white bg-dark"
+                      class="dropdown-item text-white bg-dark hover-effect"
                       href="../paginas/alfombrilla.html"
                       ><span class="fs-6">Alfombrillas</span></a
                     >
@@ -91,7 +91,7 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-white"
+                  class="nav-link text-white hover-effect"
                   href="../paginas/sobreNosotros.html"
                   ><span class="fs-6">Sobre nosotros</span></a
                 >
@@ -164,7 +164,7 @@
               </div>
               <a href="../paginas/carrito.html"
                 ><i
-                  class="bi bi-bag ms-2 text-white fs-4"
+                  class="bi bi-bag ms-2 text-white fs-4 hover-effect"
                   aria-label="Acceso al carrito"
                 ></i
               ></a>
@@ -190,7 +190,7 @@
               </h1>
             </div>
             <video
-              src="../recursos/videos/video_carrusel_2.mp4"
+              src="../recursos/videos/video_carrusel_1.mp4"
               class="d-block w-100"
               alt="Varios ratones de estilo gaming"
               autoplay
@@ -222,7 +222,7 @@
               </h1>
             </div>
             <video
-              src="../recursos/videos/video_carrusel_1.mp4"
+              src="../recursos/videos/video_carrusel_2.mp4"
               class="d-block w-100"
               alt="Varios ratones de estilo gaming"
               autoplay
@@ -274,12 +274,169 @@
               <div
                 class="d-flex align-items-center p-4 bg-light rounded-4 shadow-sm h-100 bounce-hover"
               >
-                <img
-                  src="../recursos/imagenes/raton_gris.webp"
-                  alt="Raton gaming"
-                  class="img-fluid rounded-3"
-                  style="max-width: 120px; height: auto"
-                />
+                <div style="width: 120px; height: 120px">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+                    <!-- Efecto de sombra -->
+                    <defs>
+                      <filter
+                        id="shadow"
+                        x="-20%"
+                        y="-20%"
+                        width="140%"
+                        height="140%"
+                      >
+                        <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+                        <feOffset dx="2" dy="2" />
+                        <feComponentTransfer>
+                          <feFuncA type="linear" slope="0.3" />
+                        </feComponentTransfer>
+                        <feMerge>
+                          <feMergeNode />
+                          <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                      </filter>
+
+                      <!-- Gradiente para el cuerpo -->
+                      <linearGradient
+                        id="mouseBody"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
+                      >
+                        <stop offset="0%" style="stop-color: #f0f0f0" />
+                        <stop offset="100%" style="stop-color: #d0d0d0" />
+                      </linearGradient>
+
+                      <!-- Gradiente para los botones -->
+                      <linearGradient
+                        id="buttonGradient"
+                        x1="0%"
+                        y1="0%"
+                        x2="0%"
+                        y2="100%"
+                      >
+                        <stop offset="0%" style="stop-color: #ffffff" />
+                        <stop offset="100%" style="stop-color: #e0e0e0" />
+                      </linearGradient>
+                    </defs>
+
+                    <!-- Cuerpo principal del ratón -->
+                    <path
+                      d="M40,30 C40,20 80,20 80,30 L80,90 C80,100 40,100 40,90 Z"
+                      fill="url(#mouseBody)"
+                      stroke="#2a2a2a"
+                      stroke-width="2"
+                      filter="url(#shadow)"
+                    />
+
+                    <!-- Botón izquierdo -->
+                    <path
+                      d="M40,30 C40,20 59,20 59,30 L59,60 L40,60 Z"
+                      fill="url(#buttonGradient)"
+                      stroke="#2a2a2a"
+                      stroke-width="1"
+                    />
+
+                    <!-- Botón derecho -->
+                    <path
+                      d="M61,30 C61,20 80,20 80,30 L80,60 L61,60 Z"
+                      fill="url(#buttonGradient)"
+                      stroke="#2a2a2a"
+                      stroke-width="1"
+                    />
+
+                    <!-- Rueda del ratón con detalles -->
+                    <rect
+                      x="55"
+                      y="35"
+                      width="10"
+                      height="20"
+                      rx="5"
+                      fill="#2a2a2a"
+                    />
+                    <rect
+                      x="57"
+                      y="38"
+                      width="6"
+                      height="3"
+                      rx="1"
+                      fill="#404040"
+                    />
+                    <rect
+                      x="57"
+                      y="44"
+                      width="6"
+                      height="3"
+                      rx="1"
+                      fill="#404040"
+                    />
+
+                    <!-- Efectos RGB -->
+                    <g opacity="0.8">
+                      <path
+                        d="M40,70 L80,70"
+                        stroke="#ff0000"
+                        stroke-width="2"
+                        filter="url(#shadow)"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="0.8;0.2;0.8"
+                          dur="2s"
+                          repeatCount="indefinite"
+                        />
+                      </path>
+                      <path
+                        d="M40,75 L80,75"
+                        stroke="#00ff00"
+                        stroke-width="2"
+                        filter="url(#shadow)"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="0.2;0.8;0.2"
+                          dur="2s"
+                          repeatCount="indefinite"
+                        />
+                      </path>
+                      <path
+                        d="M40,80 L80,80"
+                        stroke="#0000ff"
+                        stroke-width="2"
+                        filter="url(#shadow)"
+                      >
+                        <animate
+                          attributeName="opacity"
+                          values="0.8;0.2;0.8"
+                          dur="2s"
+                          repeatCount="indefinite"
+                          begin="1s"
+                        />
+                      </path>
+                    </g>
+
+                    <!-- Indicador de DPI -->
+                    <rect
+                      x="53"
+                      y="90"
+                      width="14"
+                      height="8"
+                      rx="2"
+                      fill="#404040"
+                    />
+                    <text
+                      x="60"
+                      y="95"
+                      font-family="Arial"
+                      font-size="6"
+                      fill="#ffffff"
+                      text-anchor="middle"
+                    >
+                      16000 DPI
+                    </text>
+                  </svg>
+                </div>
                 <div class="ms-4">
                   <h2 class="fs-5 fw-bold mb-3">
                     <a
@@ -302,12 +459,50 @@
               <div
                 class="d-flex align-items-center p-4 bg-light rounded-4 shadow-sm h-100 bounce-hover"
               >
-                <img
-                  src="../recursos/imagenes/teclado_blanco.webp"
-                  alt="Teclado gaming"
-                  class="img-fluid rounded-3"
-                  style="max-width: 120px; height: auto"
-                />
+                <div style="width: 120px; height: 120px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 120 120"
+                    id="gaming-keyboard"
+                  >
+                    <!-- Base del teclado -->
+                    <rect
+                      x="10"
+                      y="30"
+                      width="100"
+                      height="60"
+                      rx="5"
+                      fill="#e0e0e0"
+                      stroke="#2a2a2a"
+                      stroke-width="2"
+                    />
+
+                    <!-- Teclas - Primera fila -->
+                    <g fill="#f5f5f5" stroke="#2a2a2a" stroke-width="1">
+                      <rect x="20" y="40" width="10" height="10" rx="2" />
+                      <rect x="35" y="40" width="10" height="10" rx="2" />
+                      <rect x="50" y="40" width="10" height="10" rx="2" />
+                      <rect x="65" y="40" width="10" height="10" rx="2" />
+                      <rect x="80" y="40" width="20" height="10" rx="2" />
+                    </g>
+
+                    <!-- Teclas - Segunda fila -->
+                    <g fill="#f5f5f5" stroke="#2a2a2a" stroke-width="1">
+                      <rect x="20" y="55" width="15" height="10" rx="2" />
+                      <rect x="40" y="55" width="10" height="10" rx="2" />
+                      <rect x="55" y="55" width="10" height="10" rx="2" />
+                      <rect x="70" y="55" width="10" height="10" rx="2" />
+                      <rect x="85" y="55" width="15" height="10" rx="2" />
+                    </g>
+
+                    <!-- Teclas - Tercera fila -->
+                    <g fill="#f5f5f5" stroke="#2a2a2a" stroke-width="1">
+                      <rect x="20" y="70" width="20" height="10" rx="2" />
+                      <rect x="45" y="70" width="30" height="10" rx="2" />
+                      <rect x="80" y="70" width="20" height="10" rx="2" />
+                    </g>
+                  </svg>
+                </div>
                 <div class="ms-4">
                   <h3 class="fs-5 fw-bold mb-3">
                     <a
@@ -330,12 +525,60 @@
               <div
                 class="d-flex align-items-center p-4 bg-light rounded-4 shadow-sm h-100 bounce-hover"
               >
-                <img
-                  src="../recursos/imagenes/alfombrilla_viento.webp"
-                  alt="Alfombrilla personalizada gaming"
-                  class="img-fluid rounded-3"
-                  style="max-width: 120px; height: auto"
-                />
+                <div style="width: 120px; height: 120px">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 120 120"
+                    id="gaming-mousepad"
+                  >
+                    <!-- Base de la alfombrilla -->
+                    <rect
+                      x="10"
+                      y="20"
+                      width="100"
+                      height="80"
+                      rx="10"
+                      fill="#2a2a2a"
+                      stroke="#1a1a1a"
+                      stroke-width="2"
+                    />
+
+                    <!-- Patrón decorativo -->
+                    <path
+                      d="M10,60 L110,60"
+                      stroke="#333"
+                      stroke-width="1"
+                      stroke-dasharray="5,5"
+                    />
+
+                    <!-- Borde RGB -->
+                    <rect
+                      x="10"
+                      y="20"
+                      width="100"
+                      height="80"
+                      rx="10"
+                      fill="none"
+                      stroke="url(#rgbGradient)"
+                      stroke-width="2"
+                    />
+
+                    <!-- Definición del gradiente RGB -->
+                    <defs>
+                      <linearGradient
+                        id="rgbGradient"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="0%"
+                      >
+                        <stop offset="0%" style="stop-color: #ff0000" />
+                        <stop offset="50%" style="stop-color: #00ff00" />
+                        <stop offset="100%" style="stop-color: #0000ff" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
                 <div class="ms-4">
                   <h3 class="fs-5 fw-bold mb-3">
                     <a

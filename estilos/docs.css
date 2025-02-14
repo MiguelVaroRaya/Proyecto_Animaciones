@@ -16,19 +16,30 @@
   font-weight: bold;
   font-style: bold;
 }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../recursos/fuentes/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+.miFuenteMontserrat {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
 .miFuenteLime {
   font-family: "LimeLight", sans-serif;
-  color: #d44444;
+  color: #d10404;
 }
 
 .miFuente {
   font-family: "Barlow", sans-serif;
-  color: #7f2a2a;
+  color: #d10404;
 }
 
 .miFuente2 {
   font-family: "Barlow", sans-serif;
-  color: #d44444;
+  color: #d10404;
 }
 
 .miFuente3 {

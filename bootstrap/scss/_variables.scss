@@ -298,8 +298,8 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primario: #7f2a2a;
-$secundario: #d44444;
+$primario: #d10404;
+$secundario: #d10404;
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
@@ -621,6 +621,18 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
   src: url('../recursos/fuentes/Limelight-Regular.ttf') format('truetype');
   font-weight: bold;
   font-style: bold;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../recursos/fuentes/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+.miFuenteMontserrat{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 .miFuenteLime {

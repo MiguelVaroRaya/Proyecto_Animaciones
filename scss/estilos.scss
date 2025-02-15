@@ -142,6 +142,72 @@ body{
   animation: pulsePrecio 2s infinite;
 }
 
+.intro-gaming {
+  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+  padding: 4rem 0;
+  position: relative;
+}
+
+.productos-section {
+  background: linear-gradient(45deg, #0a0a0a, #1a1a1a);
+  position: relative;
+  overflow: hidden;
+}
+
+.productos-section::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(157, 0, 255, 0.1) 0%, transparent 70%);
+  animation: rotateBg 20s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotateBg {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.sponsors-section {
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%) ;
+  position: relative;
+}
+
+.sponsor-card {
+  background: rgba(26, 26, 26, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(157, 0, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.sponsor-card:hover {
+  border-color: #00F0FF;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+  transform: translateY(-5px);
+}
+
+.footer-gaming {
+  background: linear-gradient(0deg, #0a0a0a 0%, #1a1a1a 100%);
+  position: relative;
+}
+
+.footer-gaming::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #00F0FF, transparent);
+}
+
 $body-secondary-bg: #f2f2f2;
 
 @import "../bootstrap/scss/bootstrap.scss";

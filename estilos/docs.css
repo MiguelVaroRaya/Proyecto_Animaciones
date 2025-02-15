@@ -511,7 +511,7 @@
   --bd-sidebar-link-bg: rgba(85, 33, 187, .5);
   --bd-callout-link: 110, 168, 254;
   --bd-callout-code-color: #e685b5;
-  --bd-pre-bg: #1b1f22;
+  --bd-pre-bg: #040404;
 }
 
 .bd-navbar {
@@ -2558,7 +2558,7 @@
 
 .bd-gray-900 {
   color: #fff;
-  background-color: #212529;
+  background-color: #0A0A0A;
 }
 
 .bd-white {

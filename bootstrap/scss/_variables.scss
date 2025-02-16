@@ -609,26 +609,6 @@ $aspect-ratios: (
 $font-family-sans-serif:      "Play", "Helvetica", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
-@font-face {
-  font-family: 'Barlow';
-  src: url('../recursos/fuentes/BarlowCondensed-SemiBold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: 'LimeLight';
-  src: url('../recursos/fuentes/Limelight-Regular.ttf') format('truetype');
-  font-weight: bold;
-  font-style: bold;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../recursos/fuentes/Montserrat-VariableFont_wght.ttf') format('truetype');
-  font-weight: bold;
-  font-style: bold;
-}
 
 @font-face {
   font-family: 'RussoOne';
@@ -640,21 +620,6 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
 @font-face {
   font-family: 'Play';
   src: url('../recursos/fuentes/Play-Regular.ttf') format('truetype');
-}
-
-.miFuenteMontserrat{
-  font-family: 'Play', sans-serif;
-  color: white;
-}
-
-.miFuenteLime {
-  font-family: 'LimeLight', sans-serif;
-  color: $secundario;
-}
-
-.miFuente {
-  font-family: 'Barlow', sans-serif;
-  color: $primario;
 }
 
 .miFuente2 {

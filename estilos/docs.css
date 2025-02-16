@@ -22,28 +22,38 @@
   font-weight: bold;
   font-style: bold;
 }
+@font-face {
+  font-family: "RussoOne";
+  src: url("../recursos/fuentes/RussoOne-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Play";
+  src: url("../recursos/fuentes/Play-Regular.ttf") format("truetype");
+}
 .miFuenteMontserrat {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Play", sans-serif;
   color: white;
 }
 
 .miFuenteLime {
   font-family: "LimeLight", sans-serif;
-  color: #d10404;
+  color: #9D00FF;
 }
 
 .miFuente {
   font-family: "Barlow", sans-serif;
-  color: #d10404;
+  color: #9D00FF;
 }
 
 .miFuente2 {
-  font-family: "Barlow", sans-serif;
-  color: #d10404;
+  font-family: "RussoOne", sans-serif;
+  color: #9D00FF;
 }
 
 .miFuente3 {
-  font-family: "Barlow", sans-serif;
+  font-family: "RussoOne", sans-serif;
   color: white;
 }
 

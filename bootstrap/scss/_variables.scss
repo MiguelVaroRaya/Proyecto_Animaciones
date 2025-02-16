@@ -298,8 +298,8 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primario: #d10404;
-$secundario: #d10404;
+$primario: #9D00FF;
+$secundario: #9D00FF;
 $primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
@@ -606,7 +606,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Helvetica", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Play", "Helvetica", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 
 @font-face {
@@ -630,8 +630,20 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
   font-style: bold;
 }
 
+@font-face {
+  font-family: 'RussoOne';
+  src: url('../recursos/fuentes/RussoOne-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Play';
+  src: url('../recursos/fuentes/Play-Regular.ttf') format('truetype');
+}
+
 .miFuenteMontserrat{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Play', sans-serif;
   color: white;
 }
 
@@ -646,12 +658,12 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
 }
 
 .miFuente2 {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'RussoOne', sans-serif;
   color: $secundario;
 }
 
 .miFuente3 {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'RussoOne', sans-serif;
   color: white;
 }
 

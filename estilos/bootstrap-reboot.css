@@ -21,28 +21,38 @@
   font-weight: bold;
   font-style: bold;
 }
+@font-face {
+  font-family: "RussoOne";
+  src: url("../recursos/fuentes/RussoOne-Regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Play";
+  src: url("../recursos/fuentes/Play-Regular.ttf") format("truetype");
+}
 .miFuenteMontserrat {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Play", sans-serif;
   color: white;
 }
 
 .miFuenteLime {
   font-family: "LimeLight", sans-serif;
-  color: #d10404;
+  color: #9D00FF;
 }
 
 .miFuente {
   font-family: "Barlow", sans-serif;
-  color: #d10404;
+  color: #9D00FF;
 }
 
 .miFuente2 {
-  font-family: "Barlow", sans-serif;
-  color: #d10404;
+  font-family: "RussoOne", sans-serif;
+  color: #9D00FF;
 }
 
 .miFuente3 {
-  font-family: "Barlow", sans-serif;
+  font-family: "RussoOne", sans-serif;
   color: white;
 }
 
@@ -71,18 +81,18 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #0A0A0A;
-  --bs-primary: #d10404;
+  --bs-primary: #9D00FF;
   --bs-secondary: #6c757d;
-  --bs-terciario: #d10404;
+  --bs-terciario: #9D00FF;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #0A0A0A;
-  --bs-primary-rgb: 209, 4, 4;
+  --bs-primary-rgb: 157, 0, 255;
   --bs-secondary-rgb: 108, 117, 125;
-  --bs-terciario-rgb: 209, 4, 4;
+  --bs-terciario-rgb: 157, 0, 255;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -115,7 +125,7 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: "Helvetica", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Play", "Helvetica", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);

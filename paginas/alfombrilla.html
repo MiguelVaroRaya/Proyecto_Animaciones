@@ -14,6 +14,7 @@
   </head>
 
   <body class="bg-body-secondary">
+    <div class="particles-container"></div>
     <div class="container-fluid" id="container-general">
       <!--ENCABEZADO CON NAVBAR-->
 
@@ -48,51 +49,55 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
               <li class="nav-item">
                 <a
-                  class="nav-link text-white hover-effect"
+                  class="nav-link gaming text-white hover-effect"
                   aria-current="page"
                   href="../public/index.html"
-                  ><span class="fs-6">Inicio</span></a
+                  ><span class="fs-6 miFuenteMontserrat">Inicio</span></a
                 >
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-white hover-effect"
+                  class="nav-link gaming dropdown-toggle text-white hover-effect"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <span class="fs-6">Productos</span>
+                  <span class="fs-6 miFuenteMontserrat">Productos</span>
                 </a>
                 <ul class="dropdown-menu bg-dark">
                   <li>
                     <a
                       class="dropdown-item text-white bg-dark hover-effect"
                       href="../paginas/ratones.html"
-                      ><span class="fs-6">Ratones</span></a
+                      ><span class="fs-6 miFuenteMontserrat">Ratones</span></a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item text-white bg-dark hover-effect"
                       href="../paginas/teclado.html"
-                      ><span class="fs-6">Teclados</span></a
+                      ><span class="fs-6 miFuenteMontserrat">Teclados</span></a
                     >
                   </li>
                   <li>
                     <a
                       class="dropdown-item text-white bg-dark hover-effect"
                       href="../paginas/alfombrilla.html"
-                      ><span class="fs-6">Alfombrillas</span></a
+                      ><span class="fs-6 miFuenteMontserrat"
+                        >Alfombrillas</span
+                      ></a
                     >
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link text-white hover-effect"
+                  class="nav-link gaming text-white hover-effect"
                   href="../paginas/sobreNosotros.html"
-                  ><span class="fs-6">Sobre nosotros</span></a
+                  ><span class="fs-6 miFuenteMontserrat"
+                    >Sobre nosotros</span
+                  ></a
                 >
               </li>
             </ul>
@@ -518,6 +523,21 @@
     </div>
   </body>
   <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+  <script>
+    function createParticles() {
+      const container = document.querySelector(".particles-container");
+      for (let i = 0; i < 75; i++) {
+        const particle = document.createElement("div");
+        particle.className = "particle";
+        particle.style.left = Math.random() * 100 + "vw";
+        particle.style.top = Math.random() * 100 + "vh";
+        particle.style.animationDelay = Math.random() * 20 + "s";
+        container.appendChild(particle);
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", createParticles);
+  </script>
   <script>
     const popoverTriggerList = document.querySelectorAll(
       '[data-bs-toggle="popover"]'

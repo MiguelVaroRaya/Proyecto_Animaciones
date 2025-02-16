@@ -15,7 +15,6 @@
   </head>
 
   <body class="bg-body-secondary">
-    <div class="particles-container"></div>
     <div class="container-fluid" id="container-general">
       <!--ENCABEZADO CON NAVBAR-->
 
@@ -1009,21 +1008,6 @@
       </footer>
     </div>
   </body>
-  <script>
-    function createParticles() {
-        const container = document.querySelector('.particles-container');
-        for(let i = 0; i < 50; i++) {
-            const particle = document.createElement('div');
-            particle.className = 'particle';
-            particle.style.left = Math.random() * 100 + 'vw';
-            particle.style.top = Math.random() * 100 + 'vh';
-            particle.style.animationDelay = Math.random() * 20 + 's';
-            container.appendChild(particle);
-        }
-    }
-    
-    document.addEventListener('DOMContentLoaded', createParticles);
-    </script>
   <script src="../bootstrap/js/bootstrap.bundle.js"></script>
   <script src="../node_modules/aos/dist/aos.js"></script>
   <script>

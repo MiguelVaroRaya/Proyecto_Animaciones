@@ -91,11 +91,69 @@ body{
 }
 
 .hover-effect {
-  transition: opacity 0.3s ease;
+  position: relative;
+}
+
+.hover-effect::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ca78fe ;
+  transition: width 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.hover-effect:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+.hover-effect {
+  transition: color 0.9s ease-in-out;
 }
 
 .hover-effect:hover {
-  opacity: 0.8;
+  color: #ca78fe !important;
+}
+
+.dropdown-toggle.hover-effect::after {
+  position: static;
+  width: auto;
+  height: auto;
+  opacity: 1;
+  background-color: transparent;
+  margin-left: 0.5em;
+  display: inline-block;
+  vertical-align: 0.255em;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.dropdown-toggle.hover-effect::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ca78fe;
+  transition: width 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.dropdown-toggle.hover-effect:hover::before {
+  width: calc(100% - 1em);
+  opacity: 1;
+}
+
+.dropdown-menu .hover-effect::after {
+  bottom: 0;
+  background-color: #ca78fe;
 }
 
 .dropdown-menu {
@@ -142,7 +200,7 @@ body{
 
 .word-color {
   background: linear-gradient(
-    to left,
+    to right,
     #5c0f8b,
     #ffffff,
     #5c0f8b
@@ -227,31 +285,6 @@ body{
   right: 0;
   height: 1px;
   background: linear-gradient(90deg, transparent, #00F0FF, transparent);
-}
-
-.nav-link.gaming {
-  position: relative;
-}
-
-.nav-link.gaming span {
-  background: linear-gradient(
-    to left,
-    #ffffff,  
-    #9D00FF,  
-    #ffffff   
-  );
-  
-  background-size: 200% auto;
-  
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  -webkit-text-fill-color: transparent;
-  transition: all 0.7s ease;
-}
-
-.nav-link.gaming:hover span {
-  background-position: 100% 0;
 }
 
 .particles-container {
